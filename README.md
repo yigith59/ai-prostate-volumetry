@@ -31,7 +31,7 @@ The PI-CAI Public Training and Development Dataset is publicly available from Ze
 Dataset version used in this manuscript:
 
 > **PI-CAI Public Training and Development Dataset, version 2.0.**
-> **Zenodo DOI:** `INSERT EXACT DOI HERE`
+
 
 Before running the scripts, download the dataset from the official PI-CAI/Zenodo source and place it according to the paths configured in the scripts. The dataset itself is governed by its own license and is not included in this repository.
 
@@ -190,34 +190,7 @@ The pipeline reproduces:
 * Centre identities are anonymised in the manuscript as Centre 1, Centre 2, and Centre 3. The scripts may use original PI-CAI centre codes internally but map them to anonymised labels in manuscript-ready outputs.
 * The repository is designed to regenerate manuscript tables and figures from the downloaded dataset and analysis scripts.
 
-## Expected outputs
 
-The final script, `phase7_tables_and_figures.py`, generates the manuscript-ready outputs, including:
-
-* Table 1: Baseline characteristics
-* Table 2: Discrimination, internal validation, and calibration
-* Table 3: Multivariable logistic regression and coefficient-ratio analysis
-* Supplementary Table S1: Cohort derivation, centre distribution, reported-PSAD audit, verification composition, and visual QC
-* Supplementary Table S2: Threshold performance, reclassification, and decision-curve analysis
-* Supplementary Table S3: Centre-based validation, sensitivity analyses, diagnostics, and exploratory analyses
-* Figure 1: Participant flow diagram
-* Figure 2: ROC curves
-* Supplementary Figure S1: Bland-Altman prostate-volume agreement plots
-* Supplementary Figure S2: Calibration and decision-curve plots
-
-## Limitations
-
-This repository does not include:
-
-* PI-CAI images
-* segmentation masks
-* clinical marksheets
-* patient-level data
-* trained segmentation models
-* proprietary software
-* manuscript source files
-
-The user must obtain the PI-CAI dataset independently from the official source and comply with its license terms.
 
 ## License
 
@@ -225,12 +198,3 @@ The code in this repository is released under the MIT License. See `LICENSE`.
 
 The PI-CAI dataset is not part of this repository and is governed by its own CC BY-NC 4.0 license.
 
-## Citation
-
-If you use this code, please cite the manuscript after publication:
-
-> Arı YH, et al. **AI-Derived Prostate Volumetry for PSA Density–Based Detection of Clinically Significant Prostate Cancer.** Urology. Forthcoming.
-
-Please also cite the PI-CAI dataset and associated PI-CAI publication:
-
-> Saha A, Bosma JS, Twilt JJ, et al. **Artificial intelligence and radiologists in prostate cancer detection on MRI (PI-CAI): an international, paired, non-inferiority, confirmatory study.** Lancet Oncology. 2024.
