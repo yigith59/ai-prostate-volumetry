@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (not redistributed here — see README "Data Availability")
+*.csv
+*.nii
+*.nii.gz
+*.mha
+*.json
+
+# Generated outputs (produced by running the pipeline)
+final_tables/
+final_figures/
+QA_outputs/
+*.tiff
+*.png
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
